@@ -178,8 +178,7 @@ p {
 
 #header .nav-list ul li:hover a {
     color: rgb(137, 44, 220);
-    border: 3px solid rgb(137, 44, 220);
-    background-color: #fff;
+    border: 3px solid rgb(135, 27, 230);
     border-radius: 10%;
 }
 
@@ -334,6 +333,56 @@ p {
 
 
 /* End Hero Section */
+
+
+/* Buttoms Collors */
+
+#red {
+    background-color: #950101;
+}
+
+#purple {
+    background-color: #52057B;
+}
+
+#blue {
+    background-color: #150050;
+}
+
+#green {
+    background-color: #A7D129;
+}
+
+#yellow {
+    background-color: #F6C90E;
+}
+
+.container-buttons-colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#red,
+#green,
+#blue,
+#purple,
+#yellow {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+/* End Buttoms Collors */
 
 
 /* Services Section */
