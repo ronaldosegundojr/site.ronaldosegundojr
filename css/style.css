@@ -93,6 +93,11 @@ p {
     color: #52057B;
 }
 
+.underlined {
+    margin: 10%;
+    padding: 20px;
+}
+
 
 /* Header section */
 
@@ -332,6 +337,11 @@ p {
 
 
 /* Services Section */
+
+.first-letter {
+    color: #892CDC;
+    font-size: 25px;
+}
 
 #services .services {
     flex-direction: column;
