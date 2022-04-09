@@ -89,6 +89,16 @@ p {
     background-color: #dd9d09;
 }
 
+#cta-red:hover {
+    color: white;
+    background-color: rgb(252, 14, 14);
+}
+
+#cta-blue:hover {
+    color: #ffe873;
+    background-color: #4b8bbe;
+}
+
 .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
