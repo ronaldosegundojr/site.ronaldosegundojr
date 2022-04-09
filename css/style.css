@@ -67,14 +67,15 @@ p {
 .cta {
     display: flex;
     flex-direction: row;
-    padding: 10px 30px;
+    width: 40vw;
+    padding: 5px 30px;
     color: white;
     background-color: transparent;
     border: 2px solid #52057B;
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    margin-top: 30px;
+    margin-top: 10px;
     transition: 0.3s ease;
     transition-property: background-color, color;
 }
