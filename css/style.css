@@ -785,7 +785,7 @@ p {
 
 @keyframes text_reveal_name {
     100% {
-        color: #52057B;
+        color: #aa14fa;
         font-weight: 500;
     }
 }
