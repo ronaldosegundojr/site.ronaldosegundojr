@@ -446,6 +446,12 @@ p {
     overflow: hidden;
 }
 
+.service-item:hover {
+    width: 120px;
+    height: 410px;
+    background-image: linear-gradient(60deg, #1d385a 0%, #4e6f96 100%);
+}
+
 #services .service-item::after {
     content: '';
     position: absolute;
@@ -603,6 +609,14 @@ p {
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
+}
+
+.col-right:hover {
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2.1rem;
+    width: 2rem;
 }
 
 #about .col-left .about-img {
