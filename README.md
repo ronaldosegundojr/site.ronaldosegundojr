@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre minha ex
 
 ## Sobre Mim
 
-Meu nome é [Ronaldo], e sou um profissional da área de Tecnologia da Informação, especializado em programação e análise de dados. Tenho experiência em várias linguagens, incluindo Python, HTML, CSS, JavaScript, e trabalho com tecnologias como Google Tag Manager, SQL, Google Analytics 4.
+Meu nome é [Ronaldo], e sou um profissional da área de Tecnologia da Informação, especializado em programação e análise de dados. Tenho experiência em várias linguagens, incluindo Python, HTML, CSS, JavaScript, Tableau, e trabalho com tecnologias como Google Tag Manager, SQL, Google Analytics 4.
 
 ## Experiência Profissional
 
@@ -40,12 +40,12 @@ Meu nome é [Ronaldo], e sou um profissional da área de Tecnologia da Informaç
 
 ## Projetos Destacados
 
-[Adicione seus projetos destacados aqui, utilizando a estrutura semelhante às seções de experiência profissional.]
+[Em produção...]
 
 ## Habilidades
 
-- **Linguagens de Programação:** Python, HTML, CSS, JavaScript, Java, C#
-- **Tecnologias e Ferramentas:** Google Tag Manager, SQL, Google Analytics 4, React, React Native, .NET
+- **Linguagens de Programação:** Python, HTML, CSS, JavaScript, SQL
+- **Tecnologias e Ferramentas:** Google Tag Manager, Google Analytics 4, Tableau.
 
 ## Contato
 
