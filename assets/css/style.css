@@ -84,6 +84,23 @@
     top: 0;
     left: 0;
   }
+
+  /* Estilos para os botões de idioma */
+.translate-button {
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-size: 1.6rem; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #fff; /* Cor do texto */
+  background-color: #28a745; /* Cor de fundo */
+  border-radius: 5px; /* Borda arredondada */
+  transition: background-color 0.3s ease; /* Efeito de transição suave */
+
+}
+
+.translate-button:hover {
+  background-color: #218838; /* Cor de fundo ao passar o mouse */
+}
   
   @media screen and (max-width: 992px) {
     header {
