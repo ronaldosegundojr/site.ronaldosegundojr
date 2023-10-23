@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         displayResult('https://www.github.com/ronaldosegundojr');
         break;
         case '/skills':
-          displayResult('Minhas skills são: Python, Javascript, HTML, CSS, Google Analytics 4, Google Tag Manger, Tableau, SQL Server e SQL');
+          displayResult('My skills are: Python, Javascript, HTML, CSS, Google Analytics 4, Google Tag Manger, Tableau, SQL Server and SQL');
           break;
       case '/coelho':
         showRunningRabbit();
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
       default:
         // Comando não reconhecido
-        displayResult('Comando não reconhecido. Digite /help para ver as opções.');
+        displayResult('Command not recognized. Type /help to see options.');
     }
 
     // Rola para baixo para exibir a resposta mais recente
@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function displayHelpOptions() {
     const helpOptions = [
-      ' Para saber meu linkedin, digite /linkedin',
-      ' Para saber meu Github digite /github',
-      ' Para ver o White Rabbit digite /coelho',
-      ' Para ver minhas skills (habilidades) digite /skills',
-      ' Para limpar o chat, digite /clear'
+      'To find my linkedin, type /linkedin',
+      'To find my Github type /github',
+      'To see the White Rabbit type /coelho',
+      'To see my skills type /skills',
+      ' To clear the chat, type /clear'
     ];
 
     helpOptions.forEach((option) => {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     consoleBody.innerHTML = '';
 
     // Exibe a mensagem inicial
-    displayResult('Digite /help para maiores informações.');
+    displayResult('Type /help for more information.');
 
     // Reinicia a animação do Matrix
     runMatrixAnimation();

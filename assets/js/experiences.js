@@ -35,34 +35,34 @@ document.addEventListener("DOMContentLoaded", function () {
   function getExperienceText(companyName) {
     switch (companyName) {
       case "media.monks":
-        return `Responsável por criar Tags no Google Tag Maneger para dar visibilidade aos clientes a respeito do comportamento dos usuários em plataformas web. 
-        Responsável pela criação de relatórios automatizados que integram os dados de diversas plataformas do cliente, facilitando a visualização dos resultados através de Dashboards de forma a possibilitar os melhores insights na tomada de decisão. 
-        Configuração e análises para manter a saúde da plataforma Google Analytics 4 dos clientes. 
-        Documentação dos projetos e das implementações realizadas. 
-        Aprendizado constante sobre as tecnologias fundamentais da área e também sobre os conceitos básicos das demais áreas da Análise de Dados. 
-        Atuação com mais de um cliente de grande porte no mercado.
+        return `Responsible for creating Tags on Google Tag Maneger to give customers visibility regarding user behavior on web platforms.
+        Responsible for creating automated reports that integrate data from various client platforms, facilitating the visualization of results through Dashboards in order to provide the best insights into decision making.
+        Configuration and analytics to maintain the health of customers' Google Analytics 4 platform.
+        Documentation of projects and implementations carried out.
+        Constant learning about the fundamental technologies in the area and also about the basic concepts of other areas of Data Analysis.
+        Working with more than one large client in the market.
         
         Skills: Javascript, HTML, CSS, Google Analytics 4, Google Tag Maneger, Excel, Jira, Regex`;
 
       case "roche":
-        return `Responsável por validar o que o time de engenharia de dados e visualização de dados desenvolvem, com uso da documentação de software e ferramentas como SQL e Tableau. 
-        Participo como Business Analyst no time ágil criando uma conexão entre o time de negócios e o time de engenharia de dados. 
-        Além disso, sou responsável por elaborar a documentação com as informações que o time de negócios solicita e repasso para os engenheiros de dados com os campos que precisarão trabalhar, de forma estruturada e concisa para o desenvolvimento das tabelas no Hadoop e posteriormente para o time de DataViz desenvolver os dashboards e as telas e responsável por movimentar os cards referentes a validação das histórias de usuário no Jira.
+        return `Responsible for validating what the data engineering and data visualization team develops, using software documentation and tools such as SQL and Tableau.
+        I participate as a Business Analyst in the agile team, creating a connection between the business team and the data engineering team.
+        Furthermore, I am responsible for preparing the documentation with the information that the business team requests and passing it on to the data engineers with the fields that they will need to work on, in a structured and concise way for the development of the tables in Hadoop and later to the development team. DataViz developed the dashboards and screens and was responsible for moving the cards related to validating user stories in Jira.
         
         Skills: Tableau, SQL, Excel, Jira`;
 
       case "k2partneringsolutions":
-        return `Atuei como Consultor Analista de Dados Pleno alocado na multinacional da indústria Farmacêutica, Roche.`;
+        return `I worked as a Full Data Analyst Consultant allocated to the multinational pharmaceutical industry, Roche.`;
 
       case "proethicconsultoriaecompliance":
-        return `Responsável por fazer Análise de Dados via Excel dos dados recebidos pelo Canal de Denúncias. \n
-        Atuação como Líder de equipe revisando os processos a serem executados por todas as equipes.  \n
-        Experiência com Google Cloud para utilizar a API Speech-To-Text. Responsável por desenvolver dashboards em Excel com uso de tabelas dinâmicas. \n
-        Responsável por realizar auditoria interna e auditoria externa dos relatórios. Responsável por fazer SELECTS na base de dados com uso do SQL Server e SQL. \n
-        Responsável por administrar o software de telefonia IP 3CX. Responsável pela solução de problemas de software e hardware. Responsável por realizar manutenção e suporte a rede de computadores. \n
-        Recebi o desafio de adaptar o dia-a-dia da empresa para o modelo Home office durante a pandemia do COVID-19 em 2020, fiz um planejamento e a empresa toda migrou com base no que estruturei. \n
-        Responsável por acompanhar o andamento da implantação de novos clientes. Participei ativamente ajudando a organizar a implantação de 15 clientes no 1º semestre de 2021. \n
-        Responsável pelo treinamento de novos funcionários e também pelo aprimoramento dos funcionários antigos.
+        return `Responsible for performing Data Analysis via Excel of the data received by the Reporting Channel. \n
+        Acting as Team Leader reviewing the processes to be carried out by all teams. \n
+        Experience with Google Cloud to use the Speech-To-Text API. Responsible for developing dashboards in Excel using pivot tables. \n
+        Responsible for carrying out internal audit and external audit of reports. Responsible for making SELECTS in the database using SQL Server and SQL. \n
+        Responsible for administering the 3CX IP telephony software. Responsible for solving software and hardware problems. Responsible for maintaining and supporting the computer network. \n
+        I received the challenge of adapting the company's day-to-day activities to the Home Office model during the COVID-19 pandemic in 2020, I made a plan and the entire company migrated based on what I structured. \n
+        Responsible for monitoring the progress of new customer implementation. I actively participated in helping organize the implementation of 15 clients in the 1st half of 2021. \n
+        Responsible for training new employees and also for improving old employees.
         
         Skills: Python, Excel, HTML, CSS, SQL Server, SQL, 3CX PABX.`;
 
@@ -78,13 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return "Web Analytics Analyst";
 
       case "roche":
-        return "Analista de Dados Pleno";
+        return "Full Data Analyst";
 
       case "k2partneringsolutions":
-        return "Consultor Analista de Dados Pleno";
+        return "Data Analyst Consultant";
 
       case "proethicconsultoriaecompliance":
-        return "Analista de Dados Sênior";
+        return "Senior Data Analyst";
 
       default:
         return "";
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function getDateText(companyName) {
     switch (companyName) {
       case "media.monks":
-        return "Mai 2023 - Atual";
+        return "May 2023 - Current";
 
       case "roche":
         return "Mai 2022 - Jan 2023";
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return "Mai 2022 - Jan 2023";
 
       case "proethicconsultoriaecompliance":
-        return "Abr 2019 - Atual (sob demanda)";
+        return "Abr 2019 - Current (on demand)";
 
       default:
         return "";

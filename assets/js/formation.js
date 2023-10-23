@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function getFormationText(formationName) {
       switch (formationName) {
         case "usp":
-          return `Minha trajetória na USP teve inicio em 2018, quando ingressei no curso de Licenciatura em Estatística e Ciências Exatas, cursei 2 anos desse curso maravilhoso, porém acabei buscando novos horizontes e 2 anos depois, em 2020 ingressei no curso de Bacharelado em Estatística e Ciência de Dados buscando seguir meu sonho de trabalhar com tecnologia e computadores.`;
+          return `My career at USP began in 2018, when I enrolled in the Bachelor's degree in Statistics and Exact Sciences, I studied this wonderful course for 2 years, but I ended up looking for new horizons and 2 years later, in 2020, I enrolled in the Bachelor's degree in Statistics and Science. Data seeking to follow my dream of working with technology and computers.`;
   
         case "icmc-pln":
-          return `Em 2020 ingressei no curso de Bacharelado em Estatistica e Ciência de Dados, onde pude ter contato com diversas áreas da Computação e com excelentes professores pesquisadores, com projetos voltados a estatística e inteligencia artificial.`;
+          return `In 2020 I joined the Bachelor's degree in Statistics and Data Science, where I was able to have contact with different areas of Computing and with excellent research professors, with projects focused on statistics and artificial intelligence.`;
   
         case "dio":
-          return `Curso de curta duração voltado para a introdução ao Git e Github, onde pude aprender sobre o versionamento de código e a plataforma Github, onde hoje hospedo meus projetos.`;
+          return `Short course aimed at introducing Git and Github, where I was able to learn about code versioning and the Github platform, where I now host my projects.`;
   
         default:
           return "";
@@ -43,13 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function getTitleText(formationName) {
       switch (formationName) {
         case "usp":
-          return "Licenciatura em Ciências Exatas (2018 - 2020) / Bacharelado em Estatística e Ciência de Dados (2020 - Atual)";
+          return "Degree in Exact Sciences (2018 - 2020) / Bachelor's Degree in Statistics and Data Science (2020 - Current)";
   
         case "icmc-pln":
-          return "Python para Introdução a Processamento de Linguagem Natural (PLN)";
+          return "Python for Introduction to Natural Language Processing (NLP)";
   
         case "dio":
-          return "Curso de Git e Github";
+          return "Git and Github Course";
   
         default:
           return "";
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function getDateText(formationName) {
       switch (formationName) {
         case "usp":
-          return "Mar 2018 - Atual";
+          return "Mar 2018 - Current";
   
         case "icmc-pln":
           return "Set 2021 - Set 2021";
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return "Universidade de São Paulo (USP)";
   
         case "icmc-pln":
-          return "Instituto de Ciências Matemáticas e de Computação da USP (ICMC USP)";
+          return "Institute of Mathematical and Computer Sciences at USP(ICMC USP)";
   
         case "dio":
           return "Digital Innovation One (DIO)";
