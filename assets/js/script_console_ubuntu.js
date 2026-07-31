@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     return {
       skills:
         en
-          ? "My skills are: JavaScript, React, Node.js, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servers (Casa OS), Godot, Unreal Engine, Artificial Intelligence (Claude Code)."
-          : "Minhas skills são: JavaScript, React, Node.js, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servidores (Casa OS), Godot, Unreal Engine, Inteligência Artificial (Claude Code).",
+          ? "My skills are: JavaScript, React, Node.js, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servers (Casa OS), Godot, Unreal Engine, Claude Code, OpenCode, GitHub Copilot, LM Studio, Ollama, Open Source Tools, Artificial Intelligence."
+          : "Minhas skills são: JavaScript, React, Node.js, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servidores (Casa OS), Godot, Unreal Engine, Claude Code, OpenCode, GitHub Copilot, LM Studio, Ollama, Ferramentas Open Source, Inteligência Artificial.",
       notRecognized: en
         ? "Command not recognized. Type /help to see options."
         : "Comando não reconhecido. Digite /help para ver as opções.",

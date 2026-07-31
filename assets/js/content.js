@@ -50,7 +50,17 @@
         pt: "Inteligência Artificial & Automação",
         en: "Artificial Intelligence & Automation",
       },
-      skills: ["IA / LLMs", "Claude Code", "Automação", "Web Scraping"],
+      skills: [
+        "Claude Code",
+        "OpenCode",
+        "GitHub Copilot",
+        "LM Studio",
+        "Ollama",
+        "IA / LLMs",
+        "Ferramentas Open Source",
+        "Automação",
+        "Web Scraping",
+      ],
     },
   ];
 

@@ -55,8 +55,8 @@
       en: "My name is Ronaldo A. Segundo Junior. I am a developer and data specialist, with my main experience in web development (frontend and backend), server administration and homelab (Casa OS), plus hands-on knowledge of game development with Godot and Unreal Engine. I also work strongly with data collection, governance and digital measurement, having led large-scale projects in Brazil and abroad. I started my journey in 2019 and since then I have been learning and producing great results.",
     },
     about_skills: {
-      pt: "Skills: JavaScript, React, Node, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servidores (Casa OS), Godot, Unreal Engine, Inteligência Artificial.",
-      en: "Skills: JavaScript, React, Node, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servers (Casa OS), Godot, Unreal Engine, Artificial Intelligence.",
+      pt: "Skills: JavaScript, React, Node, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servidores (Casa OS), Godot, Unreal Engine, Claude Code, OpenCode, GitHub Copilot, LM Studio, Ollama, Ferramentas Open Source, Inteligência Artificial.",
+      en: "Skills: JavaScript, React, Node, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servers (Casa OS), Godot, Unreal Engine, Claude Code, OpenCode, GitHub Copilot, LM Studio, Ollama, Open Source Tools, Artificial Intelligence.",
     },
 
     skills_title: { pt: "Habilidades", en: "Skills" },
