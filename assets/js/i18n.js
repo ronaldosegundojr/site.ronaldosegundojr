@@ -92,10 +92,23 @@
       en: "Did you buy a new computer and don't know how to assemble it? Is your computer slow? You already know, right? I build and take care of it for you!",
     },
 
-    contact_text: {
-      pt: "Quer me conhecer melhor, fechar um freela ou alguma oportunidade profissional? Fale comigo pelo <a id=\"span-linkedin\" href=\"https://www.linkedin.com/in/r-segundojr\">LinkedIn</a>",
-      en: "Do you want to get to know me better, arrange a freelance gig or some professional opportunity? Get in touch with <a id=\"span-linkedin\" href=\"https://www.linkedin.com/in/r-segundojr\">LinkedIn</a>",
+    contact_title: { pt: "Contato", en: "Contact" },
+    contact_subtitle: {
+      pt: "Fale comigo por qualquer um dos canais abaixo. Será um prazer conversar sobre projetos, oportunidades ou trocar ideias sobre dados, desenvolvimento e tecnologia.",
+      en: "Get in touch with me through any of the channels below. It will be a pleasure to talk about projects, opportunities or to share ideas about data, development and technology.",
     },
+    contact_linkedin_title: { pt: "LinkedIn", en: "LinkedIn" },
+    contact_linkedin_text: {
+      pt: "Conecte-se comigo no LinkedIn e acompanhe minha trajetória profissional.",
+      en: "Connect with me on LinkedIn and follow my professional journey.",
+    },
+    contact_linkedin_cta: { pt: "Enviar mensagem no LinkedIn", en: "Send a message on LinkedIn" },
+    contact_email_title: { pt: "E-mail", en: "E-mail" },
+    contact_email_text: {
+      pt: "Prefere conversar por e-mail? Envie uma mensagem para ronaldosegundojr@usp.br.",
+      en: "Prefer to talk by e-mail? Send a message to ronaldosegundojr@usp.br.",
+    },
+    contact_email_cta: { pt: "Enviar um e-mail", en: "Send an e-mail" },
 
     footer_copyright: { pt: "Copyright © 2026", en: "Copyright © 2026" },
     footer_powered: { pt: "Feito por", en: "Powered by" },

@@ -205,7 +205,7 @@
 
   #home-image{
     width: 100%;
-    max-width: 600px;
+    max-width: 420px;
     margin: 50px auto;
     border: 2px solid #ccc;
     display: block;
@@ -213,6 +213,8 @@
 
   #home-image-wrapper {
     width: 50%;
+    display: flex;
+    justify-content: center;
   }
 
   @media screen and (max-width: 992px) {
@@ -227,6 +229,7 @@
 
     #home-image {
       margin: 0 auto;
+      max-width: 360px;
     }
   }
 
@@ -594,7 +597,6 @@
 
   #s-projects {
     padding: 96px 48px;
-    text-align: center;
     background-color: #111;
   }
   
@@ -768,7 +770,6 @@
   }
   
   #s-services .grid-layout h2 {
-    text-align: center;
     padding-bottom: 24px;
     color: #fff;
     font-size: 4rem;
@@ -1003,7 +1004,7 @@
   }
   
   #s-contact .grid-layout h2 {
-    text-align: center;
+    text-align: left;
     padding-bottom: 24px;
     color: #fff;
     font-size: 4rem;
@@ -1182,11 +1183,10 @@ main{
 .console-container {
   width: 100%;
   max-width: 600px;
-  margin: 50px auto;
+  margin: 24px auto 0;
   border: 2px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
-  height: 100%;
 }
 
 .console-header {
@@ -1234,8 +1234,11 @@ main{
   background-color: #2E0823;
   color: #00ff00;
   font-family: 'Archivo', monospace;
-  max-height: 900px;
   overflow-y: auto;
+}
+
+.console-body {
+  max-height: 320px;
 }
 
 .console-body p {
@@ -1256,21 +1259,7 @@ main{
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  height: 100%;
-  min-height: 200px;
-  max-height: 600px;
-}
-
-@media screen and (max-width: 768px) {
-  .console-ubuntu {
-    max-height: 400px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .console-ubuntu {
-    max-height: 300px;
-  }
+  height: auto;
 }
 
 #cursor {
@@ -1332,8 +1321,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
-  padding: 200px 50px;
+  padding: 100px 50px;
   overflow: hidden;
   width: 100%;
   background-color: #151515;
@@ -1342,13 +1330,13 @@ main{
 
 @media screen and (max-width: 992px) {
   .console-section {
-    padding: 120px 20px;
+    padding: 80px 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .console-section {
-    padding: 100px 16px;
+    padding: 60px 16px;
   }
 }
 
@@ -1837,17 +1825,122 @@ header .grid-layout nav {
   }
 }
 
+#s-contact .grid-layout h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+#s-contact .grid-layout h2 span:first-child {
+  color: #fff;
+}
+
+#s-contact .grid-layout h2 span:last-child {
+  color: #28a745;
+}
+
 #s-contact .grid-layout #contact {
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
 }
 
-#s-contact .grid-layout #contact h2 {
-  color: #fff;
-  font-size: 3.2rem;
-  font-weight: 500;
+#s-contact .contact-subtitle {
+  color: #9ca3af;
+  font-size: 1.8rem;
   line-height: 160%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+#s-contact .grid-layout #contact {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+#s-contact .grid-layout #contact .contact-card {
+  flex: 1 1 280px;
+  max-width: 420px;
+  background-color: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 4px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+#s-contact .grid-layout #contact .contact-card:hover {
+  border-color: #28a745;
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(40, 167, 69, 0.35);
+}
+
+#s-contact .grid-layout #contact .contact-card .contact-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #151515;
+  border: 1px solid #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+#s-contact .grid-layout #contact .contact-card .contact-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+#s-contact .grid-layout #contact .contact-card h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#s-contact .grid-layout #contact .contact-card p {
+  color: #9ca3af;
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+
+#s-contact .grid-layout #contact .contact-card .contact-cta {
+  margin-top: auto;
+  color: #28a745;
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: relative;
+}
+
+#s-contact .grid-layout #contact .contact-card .contact-cta::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(270deg, #28a745 0%, #17161d 100%);
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#s-contact .grid-layout #contact .contact-card:hover .contact-cta::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #span-linkedin {
