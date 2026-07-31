@@ -1,6 +1,6 @@
 function runMatrixAnimation() {
     const spanText = document.querySelector('.text');
-    const cursor = document.querySelector('.cursor');
+    const cursor = document.querySelector('#cursor');
     const text = [
       'Wake up, Neo.',
       'The Matrix has you...',
@@ -22,10 +22,6 @@ function runMatrixAnimation() {
       if (activeLetter === text[activeText].length) {
         activeText++;
         if (activeText === text.length) {
-          setTimeout(() => {
-            // Exibir o gif após alguns segundos
-            showGif();
-          }, 2000);
           return;
         }
         return setTimeout(() => {

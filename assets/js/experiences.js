@@ -1,159 +1,93 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Adiciona um evento de clique para cada empresa
-  document.querySelectorAll("#experience-company .company").forEach(function (company) {
-    company.addEventListener("click", function () {
-      // Obtém o nome da empresa do elemento pai
-      var companyName = this.classList[1];
+/* Experiências - conteúdo bilíngue com alternador de abas */
+(function () {
+  const EXPERIENCES = [
+    {
+      key: "webjump",
+      name: "AI/R WEBJUMP",
+      title: {
+        pt: "Data & Web Analytics Specialist",
+        en: "Data & Web Analytics Specialist",
+      },
+      date: { pt: "2025 - Atual", en: "2025 - Current" },
+      text: {
+        pt: "Especialista em dados e web analytics atuando em contas de grande porte no Brasil. Responsável por estruturação, manutenção e evolução da mensuração digital com Google Analytics 4 (GA4) e Google Tag Manager (GTM), incluindo criação de tags, tagging plan, auditorias e governança de dados.\nLiderança técnica em iniciativas de web analytics (Data Lead) no projeto Broto, orientando analistas, priorizando demandas e garantindo a qualidade da coleta de dados.\nAtuação com coleta e validação de dados (Nespresso), análise de dados e geração de insights estratégicos com Adobe Analytics (Azul Linhas Aéreas) e projeto internacional com Yamaha (EUA/Japão), com arquitetura de tracking, modelagem em SQL e BigQuery, dashboards em Tableau e automação em Python.\n\nSkills: GA4, GTM, BigQuery, Looker Studio, Adobe Analytics, SQL, Python, Tableau, Data Layer.",
+        en: "Data and web analytics specialist working on large-scale accounts in Brazil. Responsible for structuring, maintaining and evolving digital measurement with Google Analytics 4 (GA4) and Google Tag Manager (GTM), including tag creation, tagging plans, audits and data governance.\nTechnical leadership in web analytics initiatives (Data Lead) on the Broto project, mentoring analysts, prioritizing demands and ensuring data collection quality.\nWorking with data collection and validation (Nespresso), data analysis and strategic insights generation with Adobe Analytics (Azul Linhas Aéreas) and an international project with Yamaha (USA/Japan), with tracking architecture, SQL and BigQuery modeling, Tableau dashboards and Python automation.\n\nSkills: GA4, GTM, BigQuery, Looker Studio, Adobe Analytics, SQL, Python, Tableau, Data Layer.",
+      },
+    },
+    {
+      key: "media.monks",
+      name: "Media.Monks",
+      title: { pt: "Analista de Web Analytics", en: "Web Analytics Analyst" },
+      date: { pt: "Mai 2023 - 2025", en: "May 2023 - 2025" },
+      text: {
+        pt: "Responsável pela criação de Tags no Google Tag Manager para dar visibilidade aos clientes sobre o comportamento dos usuários nas plataformas web.\nCriação de relatórios automatizados que integram dados de várias plataformas dos clientes, facilitando a visualização de resultados por meio de dashboards para fornecer os melhores insights para a tomada de decisão.\nConfiguração e análises para manter a saúde da plataforma Google Analytics 4 dos clientes.\nDocumentação de projetos e implementações realizadas. Atuação com mais de um grande cliente do mercado.\n\nSkills: JavaScript, HTML, CSS, GA4, GTM, Excel, Jira, Regex.",
+        en: "Responsible for creating Tags on Google Tag Manager to give customers visibility regarding user behavior on web platforms.\nResponsible for creating automated reports that integrate data from various client platforms, facilitating the visualization of results through Dashboards in order to provide the best insights into decision making.\nConfiguration and analytics to maintain the health of customers' Google Analytics 4 platform.\nDocumentation of projects and implementations carried out. Working with more than one large client in the market.\n\nSkills: JavaScript, HTML, CSS, GA4, GTM, Excel, Jira, Regex.",
+      },
+    },
+    {
+      key: "roche",
+      name: "Roche",
+      title: { pt: "Analista de Dados Pleno", en: "Full Data Analyst" },
+      date: { pt: "Mai 2022 - Jan 2023", en: "May 2022 - Jan 2023" },
+      text: {
+        pt: "Responsável por validar o trabalho do time de engenharia de dados e visualização de dados, utilizando documentação de software e ferramentas como SQL e Tableau.\nAtuação como Business Analyst no time ágil, criando uma conexão entre o time de negócios e o time de engenharia de dados.\nPreparação de documentação com as informações solicitadas pelo time de negócios para os engenheiros de dados, de forma estruturada e concisa, para o desenvolvimento das tabelas no Hadoop e, posteriormente, do time de DataViz.\n\nSkills: Tableau, SQL, Excel, Jira.",
+        en: "Responsible for validating what the data engineering and data visualization team develops, using software documentation and tools such as SQL and Tableau.\nI participate as a Business Analyst in the agile team, creating a connection between the business team and the data engineering team.\nPreparing the documentation with the information the business team requests and passing it on to data engineers in a structured and concise way for the development of tables in Hadoop and later to the DataViz team.\n\nSkills: Tableau, SQL, Excel, Jira.",
+      },
+    },
+    {
+      key: "k2partneringsolutions",
+      name: "K2 Partnering Solutions",
+      title: { pt: "Consultor Analista de Dados", en: "Data Analyst Consultant" },
+      date: { pt: "Mai 2022 - Jan 2023", en: "May 2022 - Jan 2023" },
+      text: {
+        pt: "Atuei como Consultor Analista de Dados Pleno alocado na multinacional da indústria farmacêutica, Roche.",
+        en: "I worked as a Full Data Analyst Consultant allocated to the multinational pharmaceutical industry, Roche.",
+      },
+    },
+    {
+      key: "proethicconsultoriaecompliance",
+      name: "Proethic Consultoria e Compliance",
+      title: { pt: "Analista de Dados Sênior", en: "Senior Data Analyst" },
+      date: { pt: "Abr 2019 - Atual (sob demanda)", en: "Apr 2019 - Current (on demand)" },
+      text: {
+        pt: "Responsável pela análise de dados via Excel dos dados recebidos pelo Canal de Denúncias.\nAtuação como Líder de equipe, revisando os processos a serem executados por todas as equipes.\nExperiência com Google Cloud para usar a API Speech-To-Text. Desenvolvimento de dashboards em Excel com tabelas dinâmicas.\nResponsável por realizar auditorias internas e externas de relatórios e por fazer SELECTs no banco de dados usando SQL Server e SQL.\nAdministração do software de telefonia IP 3CX e suporte a hardware e software.\n\nSkills: Python, Excel, HTML, CSS, SQL Server, SQL, 3CX PABX.",
+        en: "Responsible for performing Data Analysis via Excel of the data received by the Reporting Channel.\nActing as Team Leader reviewing the processes to be carried out by all teams.\nExperience with Google Cloud to use the Speech-To-Text API. Responsible for developing dashboards in Excel using pivot tables.\nResponsible for carrying out internal and external audit of reports and for making SELECTs in the database using SQL Server and SQL.\nResponsible for administering the 3CX IP telephony software and for solving software and hardware problems.\n\nSkills: Python, Excel, HTML, CSS, SQL Server, SQL, 3CX PABX.",
+      },
+    },
+  ];
 
-      // Atualiza o conteúdo com base na empresa
-      updateExperienceContent(companyName);
-    });
-  });
+  const optionEl = document.getElementById("experience-company");
+  const titleEl = document.querySelector(".text-experience h4.titleExperience");
+  const dateEl = document.querySelector(".text-experience p.dateExperience");
+  const companyEl = document.querySelector(".text-experience h5.companyExperience");
+  const textEl = document.querySelector(".text-experience p.changeExperience");
 
-  // Função para atualizar o conteúdo com base na empresa
-  function updateExperienceContent(companyName) {
-    // Define o texto da experiência com base na empresa
-    var experienceText = getExperienceText(companyName);
+  let current = 0;
 
-    // Atualiza o conteúdo da tag <p class="changeExperience">
-    document.querySelector(".text-experience p.changeExperience").textContent = experienceText;
+  function render() {
+    const lang = window.I18N.current;
 
-    // Atualiza o conteúdo da tag <h4 class="titleExperience">
-    document.querySelector(".text-experience h4.titleExperience").textContent = getTitleText(companyName);
-
-    // Atualiza o conteúdo da tag <h5 class="companyExperience">
-    document.querySelector(".text-experience h5.companyExperience").textContent = formatCompanyName(companyName);
-
-    // Atualiza o conteúdo da tag <p class="dateExperience">
-    document.querySelector(".text-experience p.dateExperience").textContent = getDateText(companyName);
-
-    // Lidar com o clique nas empresas
-    handleCompanyClick(companyName);
-  }
-
-  // Função para obter o texto de experiência com base na empresa
-  function getExperienceText(companyName) {
-    switch (companyName) {
-      case "media.monks":
-        return `Responsible for creating Tags on Google Tag Maneger to give customers visibility regarding user behavior on web platforms.
-        Responsible for creating automated reports that integrate data from various client platforms, facilitating the visualization of results through Dashboards in order to provide the best insights into decision making.
-        Configuration and analytics to maintain the health of customers' Google Analytics 4 platform.
-        Documentation of projects and implementations carried out.
-        Constant learning about the fundamental technologies in the area and also about the basic concepts of other areas of Data Analysis.
-        Working with more than one large client in the market.
-        
-        Skills: Javascript, HTML, CSS, Google Analytics 4, Google Tag Maneger, Excel, Jira, Regex`;
-
-      case "roche":
-        return `Responsible for validating what the data engineering and data visualization team develops, using software documentation and tools such as SQL and Tableau.
-        I participate as a Business Analyst in the agile team, creating a connection between the business team and the data engineering team.
-        Furthermore, I am responsible for preparing the documentation with the information that the business team requests and passing it on to the data engineers with the fields that they will need to work on, in a structured and concise way for the development of the tables in Hadoop and later to the development team. DataViz developed the dashboards and screens and was responsible for moving the cards related to validating user stories in Jira.
-        
-        Skills: Tableau, SQL, Excel, Jira`;
-
-      case "k2partneringsolutions":
-        return `I worked as a Full Data Analyst Consultant allocated to the multinational pharmaceutical industry, Roche.`;
-
-      case "proethicconsultoriaecompliance":
-        return `Responsible for performing Data Analysis via Excel of the data received by the Reporting Channel. \n
-        Acting as Team Leader reviewing the processes to be carried out by all teams. \n
-        Experience with Google Cloud to use the Speech-To-Text API. Responsible for developing dashboards in Excel using pivot tables. \n
-        Responsible for carrying out internal audit and external audit of reports. Responsible for making SELECTS in the database using SQL Server and SQL. \n
-        Responsible for administering the 3CX IP telephony software. Responsible for solving software and hardware problems. Responsible for maintaining and supporting the computer network. \n
-        I received the challenge of adapting the company's day-to-day activities to the Home Office model during the COVID-19 pandemic in 2020, I made a plan and the entire company migrated based on what I structured. \n
-        Responsible for monitoring the progress of new customer implementation. I actively participated in helping organize the implementation of 15 clients in the 1st half of 2021. \n
-        Responsible for training new employees and also for improving old employees.
-        
-        Skills: Python, Excel, HTML, CSS, SQL Server, SQL, 3CX PABX.`;
-
-      default:
-        return "";
-    }
-  }
-
-  // Função para obter o texto do título com base na empresa
-  function getTitleText(companyName) {
-    switch (companyName) {
-      case "media.monks":
-        return "Web Analytics Analyst";
-
-      case "roche":
-        return "Full Data Analyst";
-
-      case "k2partneringsolutions":
-        return "Data Analyst Consultant";
-
-      case "proethicconsultoriaecompliance":
-        return "Senior Data Analyst";
-
-      default:
-        return "";
-    }
-  }
-
-  // Função para obter o texto da data com base na empresa
-  function getDateText(companyName) {
-    switch (companyName) {
-      case "media.monks":
-        return "May 2023 - Current";
-
-      case "roche":
-        return "Mai 2022 - Jan 2023";
-
-      case "k2partneringsolutions":
-        return "Mai 2022 - Jan 2023";
-
-      case "proethicconsultoriaecompliance":
-        return "Abr 2019 - Current (on demand)";
-
-      default:
-        return "";
-    }
-  }
-
-  // Função para formatar o nome da empresa
-  function formatCompanyName(companyName) {
-    switch (companyName) {
-      case "media.monks":
-        return "Media.Monks";
-
-      case "roche":
-        return "Roche";
-
-      case "k2partneringsolutions":
-        return "K2 Partnering Solutions";
-
-      case "proethicconsultoriaecompliance":
-        return "Proethic Consultoria e Compliance";
-
-      default:
-        return "";
-    }
-  }
-
-  // Função para lidar com o clique nas empresas
-  function handleCompanyClick(companyName) {
-    // Remove a classe 'activeExperience' de todas as empresas
-    var allCompanies = document.querySelectorAll('.option-experience .company');
-    allCompanies.forEach(function(company) {
-      company.classList.remove('activeExperience');
+    optionEl.innerHTML = "";
+    EXPERIENCES.forEach((exp, i) => {
+      const div = document.createElement("div");
+      div.className = "company " + exp.key + (i === current ? " activeExperience" : "");
+      const h3 = document.createElement("h3");
+      h3.textContent = exp.name;
+      div.appendChild(h3);
+      div.addEventListener("click", () => {
+        current = i;
+        render();
+      });
+      optionEl.appendChild(div);
     });
 
-    // Adiciona a classe 'activeExperience' apenas à empresa clicada
-    var clickedCompany = document.querySelector('.company.' + companyName);
-  
-    // Verifica se o elemento foi encontrado antes de tentar adicionar a classe
-    if (clickedCompany) {
-      clickedCompany.classList.add('activeExperience');
-    }
+    const exp = EXPERIENCES[current];
+    titleEl.textContent = exp.title[lang];
+    dateEl.textContent = exp.date[lang];
+    companyEl.textContent = exp.name;
+    textEl.textContent = exp.text[lang];
   }
 
-  // Adiciona o evento de clique a todas as empresas
-  var allCompanies = document.querySelectorAll('.option-experience .company');
-  allCompanies.forEach(function(company) {
-    company.addEventListener('click', function() {
-      var companyName = company.classList[1]; // Assume que a segunda classe é o nome da empresa
-      updateExperienceContent(companyName);
-    });
-  });
-});
+  window.addEventListener("languagechange", render);
+  document.addEventListener("DOMContentLoaded", render);
+})();
