@@ -11,12 +11,12 @@
     nav_contact: { pt: "Contato", en: "Contact" },
 
     home_title: {
-      pt: "Especialista em Dados e Web Analytics com forte experiência em <span>Google Analytics 4, Google Tag Manager, BigQuery, Looker Studio, SQL e Python</span>.",
-      en: "Data & Web Analytics Specialist with strong experience in <span>Google Analytics 4, Google Tag Manager, BigQuery, Looker Studio, SQL and Python</span>.",
+      pt: "Desenvolvedor com forte experiência em <span>web (frontend e backend), servidores e homelab</span>, além de mensuração digital com <span>GA4, GTM, BigQuery, Looker Studio, SQL e Python</span>.",
+      en: "Developer with strong experience in <span>web (frontend and backend), servers and homelab</span>, plus digital measurement with <span>GA4, GTM, BigQuery, Looker Studio, SQL and Python</span>.",
     },
     home_text: {
-      pt: "Trabalho com mensuração digital, coleta e governança de dados em grandes contas (Azul, Nespresso, Yamaha, Gerdau e Broto), além de desenvolvimento de software com JavaScript, React, Node e Docker. Possuo certificação Adobe em Real-Time CDP e experiência com Inteligência Artificial (Claude Code).",
-      en: "I work with digital measurement, data collection and data governance on major accounts (Azul, Nespresso, Yamaha, Gerdau and Broto), as well as software development with JavaScript, React, Node and Docker. I am Adobe Real-Time CDP certified and experienced with Artificial Intelligence (Claude Code).",
+      pt: "Minha maior experiência está no desenvolvimento de software: frontend e backend com JavaScript, React, Node e Python, além de administração de servidores e homelab (Casa OS). Também tenho forte atuação em mensuração digital, coleta e governança de dados em grandes contas (Azul, Nespresso, Yamaha, Gerdau e Broto), certificação Adobe em Real-Time CDP e experiência com Inteligência Artificial (Claude Code). Tenho ainda conhecimento empírico em desenvolvimento de jogos com Godot e Unreal Engine.",
+      en: "My biggest experience is in software development: frontend and backend with JavaScript, React, Node and Python, plus server administration and homelab (Casa OS). I also have strong experience in digital measurement, data collection and governance on major accounts (Azul, Nespresso, Yamaha, Gerdau and Broto), Adobe Real-Time CDP certification and experience with Artificial Intelligence (Claude Code). I also have hands-on knowledge of game development with Godot and Unreal Engine.",
     },
     home_cta: { pt: "Entre em contato", en: "Get in touch" },
 
@@ -49,20 +49,20 @@
     console_cmd_clear: { pt: "Para limpar o console.", en: "To clean the console." },
 
     about_label: { pt: "Quem sou eu", en: "Who am I" },
-    about_role: { pt: "Data & Web Analytics Specialist", en: "Data & Web Analytics Specialist" },
+    about_role: { pt: "Desenvolvedor & Especialista em Dados", en: "Developer & Data Specialist" },
     about_text: {
-      pt: "Meu nome é Ronaldo A. Segundo Junior. Sou especialista em dados e web analytics, com forte atuação em coleta, governança e mensuração digital. Iniciei minha jornada em 2019 e, desde então, venho aprendendo e produzindo grandes resultados em projetos de grande porte no Brasil e no exterior.",
-      en: "My name is Ronaldo A. Segundo Junior. I am a data and web analytics specialist, strongly focused on data collection, governance and digital measurement. I started my journey in 2019 and since then I have been learning and producing great results on large-scale projects in Brazil and abroad.",
+      pt: "Meu nome é Ronaldo A. Segundo Junior. Sou desenvolvedor e especialista em dados, com maior experiência em desenvolvimento web (frontend e backend), administração de servidores e homelab (Casa OS), além de conhecimento empírico em desenvolvimento de jogos com Godot e Unreal Engine. Também atuo fortemente com coleta, governança e mensuração digital, tendo conduzido projetos de grande porte no Brasil e no exterior. Iniciei minha jornada em 2019 e, desde então, venho aprendendo e produzindo grandes resultados.",
+      en: "My name is Ronaldo A. Segundo Junior. I am a developer and data specialist, with my main experience in web development (frontend and backend), server administration and homelab (Casa OS), plus hands-on knowledge of game development with Godot and Unreal Engine. I also work strongly with data collection, governance and digital measurement, having led large-scale projects in Brazil and abroad. I started my journey in 2019 and since then I have been learning and producing great results.",
     },
     about_skills: {
-      pt: "Skills: GA4, GTM, BigQuery, Looker Studio, Adobe Analytics, SQL, Python, JavaScript, React, Node, Docker, Git, Expo, Inteligência Artificial.",
-      en: "Skills: GA4, GTM, BigQuery, Looker Studio, Adobe Analytics, SQL, Python, JavaScript, React, Node, Docker, Git, Expo, Artificial Intelligence.",
+      pt: "Skills: JavaScript, React, Node, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servidores (Casa OS), Godot, Unreal Engine, Inteligência Artificial.",
+      en: "Skills: JavaScript, React, Node, Python, HTML, CSS, Docker, Git, Expo, GA4, GTM, BigQuery, Looker Studio, SQL, Servers (Casa OS), Godot, Unreal Engine, Artificial Intelligence.",
     },
 
     skills_title: { pt: "Habilidades", en: "Skills" },
     skills_intro: {
-      pt: "Ferramentas e tecnologias que utilizo no dia a dia, entre mensuração digital, desenvolvimento de software e inteligência artificial.",
-      en: "Tools and technologies I use every day, across digital measurement, software development and artificial intelligence.",
+      pt: "Ferramentas e tecnologias que utilizo no dia a dia, entre desenvolvimento de software, servidores e homelab, mensuração digital, desenvolvimento de jogos e inteligência artificial.",
+      en: "Tools and technologies I use every day, across software development, servers and homelab, digital measurement, game development and artificial intelligence.",
     },
 
     formation_title: { pt: "Formação", en: "Education" },

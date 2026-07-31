@@ -29,8 +29,21 @@
       ],
     },
     {
-      title: { pt: "Infraestrutura & DevOps", en: "Infrastructure & DevOps" },
-      skills: ["Docker", "Git", "GitHub", "Servidores", "Linux", "Cloud"],
+      title: { pt: "Servidores & Homelab", en: "Servers & Homelab" },
+      skills: [
+        "Casa OS",
+        "Homelab",
+        "Docker",
+        "Git",
+        "GitHub",
+        "Servidores",
+        "Linux",
+        "Cloud",
+      ],
+    },
+    {
+      title: { pt: "Desenvolvimento de Jogos", en: "Game Development" },
+      skills: ["Godot", "Unreal Engine", "Blender", "Game Design"],
     },
     {
       title: {
