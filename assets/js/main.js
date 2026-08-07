@@ -33,29 +33,42 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* Scroll reveal simples via IntersectionObserver */
-  const revealElements = document.querySelectorAll(
-    ".delaySmallReveal, .delayMediumReveal, .delayLargeReveal, .delayExtraBigReveal, .intervalCardReveal"
-  );
+  let revealObserver = null;
+  const revealClass = ".delaySmallReveal, .delayMediumReveal, .delayLargeReveal, .delayExtraBigReveal, .intervalCardReveal";
 
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+  function setupReveal() {
+    const revealElements = document.querySelectorAll(revealClass);
 
-    revealElements.forEach(function (el) {
-      observer.observe(el);
-    });
-  } else {
-    revealElements.forEach(function (el) {
-      el.classList.add("revealed");
-    });
+    if (revealObserver) {
+      revealObserver.disconnect();
+      revealObserver = null;
+    }
+
+    if ("IntersectionObserver" in window) {
+      revealObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      revealElements.forEach(function (el) {
+        revealObserver.observe(el);
+      });
+    } else {
+      revealElements.forEach(function (el) {
+        el.classList.add("revealed");
+      });
+    }
   }
+
+  /* Reaplica o reveal após o idioma mudar (o DOM é recriado) */
+  window.addEventListener("languagechange", setupReveal);
+
+  setupReveal();
 });
