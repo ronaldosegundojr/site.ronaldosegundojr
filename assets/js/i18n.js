@@ -105,8 +105,8 @@
     contact_linkedin_cta: { pt: "Enviar mensagem no LinkedIn", en: "Send a message on LinkedIn" },
     contact_email_title: { pt: "E-mail", en: "E-mail" },
     contact_email_text: {
-      pt: "Prefere conversar por e-mail? Envie uma mensagem para ronaldosegundojr@usp.br.",
-      en: "Prefer to talk by e-mail? Send a message to ronaldosegundojr@usp.br.",
+      pt: "Prefere conversar por e-mail? Envie uma mensagem para ronaldosegundojunior@hotmail.com.",
+      en: "Prefer to talk by e-mail? Send a message to ronaldosegundojunior@hotmail.com.",
     },
     contact_email_cta: { pt: "Enviar um e-mail", en: "Send an e-mail" },
 
